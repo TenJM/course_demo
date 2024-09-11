@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Dental Care</title>
+    <style>
+        /* General styling */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Header styling */
+        header {
+            background-color: #f4f4f4;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            border-bottom: 2px solid #ddd;
+            overflow: hidden; /* Ensure no overflow from animation */
+        }
+
+        .header-content {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            justify-content: space-between;
+            position: relative;
+        }
+
+        .logo-container img {
+            height: 60px;
+            margin-right: 20px;
+        }
+
+        .hospital-info {
+            text-align: center;
+        }
+
+        .hospital-info h1 {
+            margin: 0;
+            font-size: 24px;
+            color: #333;
+        }
+
+        .hospital-info p {
+            margin: 5px 0;
+            font-size: 14px;
+            color: #555;
+        }
+
+        /* Image slider styling */
+        .image-slider {
+            display: flex;
+            flex-direction: row;
+            overflow: hidden;
+            width: 100%;
+            max-width: 600px;
+        }
+
+        .image-slider-wrapper {
+            display: flex;
+            width: 400%; /* To accommodate the full set of images */
+            animation: scroll 32s linear infinite;
+        }
+
+        .image-slider img {
+            height: 100px;
+            width: 25%; /* Adjust to fit within 400% width */
+            object-fit: cover;
+        }
+
+        @keyframes scroll {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-100%); }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo-container">
+                <img src="logo.png" alt="Hospital Logo">
+            </div>
+            <div class="hospital-info">
+                <h1>Hospital Name</h1>
+                <p>Phone: +1-234-567-890</p>
+                <p>Email: info@hospital.com</p>
+            </div>
+            <div class="image-slider">
+                <div class="image-slider-wrapper">
+                    <img src="templates/espresso.jpg.webp" alt="Dental Care Image 1">
+                    <img src="espresso.jpg.webp" alt="Dental Care Image 2">
+                    <img src="statics/espresso.jpg.webp" alt="Dental Care Image 3">
+                    <img src="statics/espresso.jpg.webp" alt="Dental Care Image 4">
+                </div>
+            </div>
+        </div>
+    </header>
+</body>
+</html>
