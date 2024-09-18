@@ -935,47 +935,48 @@ form input, form select, form textarea {
 <section class="specialist-section slide-in" style="padding: 40px;">
     <h2>Our Specialists</h2>
     <div class="specialist-container">
-        <div class="specialist-item" onclick="toggleDetails('cardiology')">
-            <img src="cardio.png" alt="Cardiology">
-            <h3>Cardiology</h3>
-            <p>Expert care for heart-related conditions and diseases.</p>
-            <div class="specialist-details" id="cardiology-details">
-                <button class="close-button" onclick="closeDetails('cardiology')">&times;</button>
-                <img src="https://via.placeholder.com/400x200" alt="Cardiology Department">
-                <h4>Cardiology Department</h4>
-                <p>Meet our team of cardiologists and book your appointment today.</p>
+        <div class="specialist-item" onclick="toggleDetails('general-practitioner')">
+            <img src="cardio.png" alt="General Practitioner">
+            <h3>General Practitioner</h3>
+            <p>Expert care for various health conditions.</p>
+            <div class="specialist-details" id="general-practitioner-details" style="display: none;">
+                <button class="close-button" onclick="closeDetails('general-practitioner', event)">&times;</button>
+                <img src="https://via.placeholder.com/400x200" alt="General Practitioner Department">
+                <h4>General Practitioner Department</h4>
+                <p>Meet our team of general practitioners and book your appointment today.</p>
                 <button onclick="window.location.href='book-appointment-url'">Book Appointment</button>
                 <button onclick="window.location.href='book-health-checkup-url'">Book Health Check-Up</button>
             </div>
         </div>
-        <div class="specialist-item" onclick="toggleDetails('gastrology')">
-            <img src="gas.png" alt="Gastrology">
-            <h3>Gastrology</h3>
-            <p>Specialized treatment for digestive system disorders.</p>
-            <div class="specialist-details" id="gastrology-details">
-                <button class="close-button" onclick="closeDetails('gastrology')">&times;</button>
-                <img src="https://via.placeholder.com/400x200" alt="Gastrology Department">
-                <h4>Gastrology Department</h4>
-                <p>Meet our team of gastrologists and book your appointment today.</p>
+        <div class="specialist-item" onclick="toggleDetails('gynaecology')">
+            <img src="gas.png" alt="Gynaecology">
+            <h3>Gynaecology</h3>
+            <p>Specialized treatment for women's health.</p>
+            <div class="specialist-details" id="gynaecology-details" style="display: none;">
+                <button class="close-button" onclick="closeDetails('gynaecology', event)">&times;</button>
+                <img src="https://via.placeholder.com/400x200" alt="Gynaecology Department">
+                <h4>Gynaecology Department</h4>
+                <p>Meet our team of gynaecologists and book your appointment today.</p>
                 <button onclick="window.location.href='book-appointment-url'">Book Appointment</button>
                 <button onclick="window.location.href='book-health-checkup-url'">Book Health Check-Up</button>
             </div>
         </div>
-        <div class="specialist-item" onclick="toggleDetails('oncology')">
-            <img src="onco.png" alt="Oncology">
-            <h3>Oncology</h3>
-            <p>Comprehensive cancer care and treatments.</p>
-            <div class="specialist-details" id="oncology-details">
-                <button class="close-button" onclick="closeDetails('oncology')">&times;</button>
-                <img src="https://via.placeholder.com/400x200" alt="Oncology Department">
-                <h4>Oncology Department</h4>
-                <p>Meet our team of oncologists and book your appointment today.</p>
+        <div class="specialist-item" onclick="toggleDetails('dentistry')">
+            <img src="onco.png" alt="Dental">
+            <h3>Dental</h3>
+            <p>Comprehensive dental care and treatments.</p>
+            <div class="specialist-details" id="dentistry-details" style="display: none;">
+                <button class="close-button" onclick="closeDetails('dentistry', event)">&times;</button>
+                <img src="https://via.placeholder.com/400x200" alt="Dental Department">
+                <h4>Dental Department</h4>
+                <p>Meet our team of dental specialists and book your appointment today.</p>
                 <button onclick="window.location.href='book-appointment-url'">Book Appointment</button>
                 <button onclick="window.location.href='book-health-checkup-url'">Book Health Check-Up</button>
             </div>
         </div>
     </div>
 </section>
+
 <section id="patient-healthcare" class="slide-in" style="background-color: skyblue; padding: 40px; text-align: center;">
     <h2 style="color: white;">Patient Health Care</h2>
     <div style="margin-top: 20px;">
